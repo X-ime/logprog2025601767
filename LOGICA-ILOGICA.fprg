@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="LOGICA-ILOGICA"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 03:39:03 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDM6MzE6MTYgcC4gbS47MzQ5OA=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDM6Mzk6MDMgcC4gbS47MTszNjEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CALIF" type="Integer" array="False" size=""/>
+            <assign variable="CALIF" expression="0"/>
+            <input variable="CALIF"/>
+            <if expression="CALIF&lt;=10">
+                <then>
+                    <if expression="CALIF&gt;=0">
+                        <then>
+                            <if expression="CALIF&lt;6">
+                                <then>
+                                    <output expression="&quot;(REPROBADO)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;(APROBADO)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;(ILOGICA)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;(ILOGICA)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

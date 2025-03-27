@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PAR-IMPAR"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 03:06:32 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDM6MDI6MTIgcC4gbS47MzQ5Mg=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDM6MDY6MzIgcC4gbS47MTszNjA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <assign variable="N" expression="0"/>
+            <input variable="N"/>
+            <if expression="N%2==0">
+                <then>
+                    <output expression="&quot;(PAR)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;(IMPAR)&quot;" newline="False"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

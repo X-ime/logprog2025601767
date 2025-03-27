@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DONAS"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 05:23:02 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDQ6MjU6MzEgcC4gbS47MzQ5OQ=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDU6MjM6MDIgcC4gbS47MjszNjA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="DONAS" type="Integer" array="False" size=""/>
+            <declare name="PRECIO" type="Integer" array="False" size=""/>
+            <declare name="TOTAL" type="Integer" array="False" size=""/>
+            <assign variable="DONAS" expression="10"/>
+            <input variable="DONAS"/>
+            <input variable="PRECIO"/>
+            <if expression="DONAS&gt;=50">
+                <then>
+                    <output expression="&quot;(PRECIO=8)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="DONAS&gt;=30">
+                        <then>
+                            <output expression="&quot;(PRECIO=9)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;(PRECIO=10)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="TOTAL" expression="PRECIO*DONAS"/>
+            <output expression="DONAS" newline="True"/>
+            <output expression="PRECIO" newline="True"/>
+            <output expression="TOTAL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

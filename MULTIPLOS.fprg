@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="MULTIPLOS"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 03:28:57 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDM6MTQ6NTIgcC4gbS47MzQ5OQ=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDM6Mjg6NTcgcC4gbS47MTszNjE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <assign variable="N" expression="0"/>
+            <input variable="N"/>
+            <if expression="N%2==0">
+                <then>
+                    <output expression="&quot;(MULTIPLO DE 2)&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="N%3==0">
+                <then>
+                    <output expression="&quot;(MULTIPLO DE 3)&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="N%5==0">
+                <then>
+                    <output expression="&quot;(MULTIPLO DE 5)&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

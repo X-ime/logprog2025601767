@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CALIFICACION"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 02:29:18 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDE6Mjc6MTUgcC4gbS47MzUwMA=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDMtMjY7MDI6Mjk6MTggcC4gbS47MTszNjE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CALIF" type="Integer" array="False" size=""/>
+            <assign variable="CALIF" expression="0"/>
+            <input variable="CALIF"/>
+            <if expression="CALIF&gt;6">
+                <then>
+                    <output expression="&quot;(APROBADO)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;(REPROBADO)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
