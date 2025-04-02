@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="HOMBRE O MUJER"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 05:43:34 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDI7MDU6MTY6MzMgcC4gbS47MzQ5Nw=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDI7MDU6NDM6MzQgcC4gbS47MTszNjA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="INICIAL" type="String" array="False" size=""/>
+            <declare name="SEXO" type="String" array="False" size=""/>
+            <declare name="MUJER" type="String" array="False" size=""/>
+            <declare name="HOMBRE" type="String" array="False" size=""/>
+            <declare name="N" type="String" array="False" size=""/>
+            <declare name="M" type="String" array="False" size=""/>
+            <assign variable="INICIAL" expression="&quot;&quot;"/>
+            <assign variable="SEXO" expression="&quot;&quot;"/>
+            <assign variable="MUJER" expression="&quot;&quot;"/>
+            <assign variable="HOMBRE" expression="&quot;&quot;"/>
+            <input variable="SEXO"/>
+            <input variable="INICIAL"/>
+            <if expression="SEXO==MUJER AND INICIAL&lt;&quot;M&quot; OR SEXO==HOMBRE AND INICIAL&gt;&quot;N&quot;">
+                <then>
+                    <output expression="&quot;PERTENECE AL GRUPO B&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;PERTENECE AL GRUPO A&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
