@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="JUEGOS"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 05:04:44 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDI7MDQ6MDQ6NTUgcC4gbS47MzQ5Nw=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDI7MDU6MDQ6NDQgcC4gbS47MTszNjA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="EDAD" type="Integer" array="False" size=""/>
+            <assign variable="EDAD" expression="0"/>
+            <input variable="EDAD"/>
+            <if expression="EDAD&lt;=4">
+                <then>
+                    <output expression="&quot;GRATIS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="!(EDAD&lt;=4 OR EDAD&gt;=18)">
+                        <then>
+                            <output expression="&quot;200 PESOS&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="EDAD&gt;=18">
+                                <then>
+                                    <output expression="&quot;500 PESOS&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
