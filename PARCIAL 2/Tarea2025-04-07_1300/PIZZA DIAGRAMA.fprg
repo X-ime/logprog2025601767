@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PIZZA DIAGRAMA"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 08:46:39 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDY7MDg6MTc6MzEgcC4gbS47MzUwMw=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDY7MDg6NDY6MzkgcC4gbS47MTszNjIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="OPCION" type="String" array="False" size=""/>
+            <declare name="INGREDIENTES" type="String" array="False" size=""/>
+            <declare name="PIZZA" type="String" array="False" size=""/>
+            <output expression="&quot;DESEA PIZZA VEGETARIANA(SI/NO):&quot;" newline="True"/>
+            <input variable="OPCION"/>
+            <if expression="OPCION==&quot;SI/NO&quot;">
+                <then>
+                    <output expression="&quot;VEGETARIANA INGREDIENTES: PIMIENTO O TOFU&quot;" newline="True"/>
+                    <declare name="ELIGE" type="String" array="False" size=""/>
+                    <input variable="ELIGE"/>
+                    <input variable="INGREDIENTES"/>
+                    <assign variable="PIZZA" expression="&quot; VEGETARIANA: CON MOZZARELLA,TOMATE&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot; NO VEGETARIANA INGREDIENTES: PEPERONI,JAMON O SALMON&quot;" newline="True"/>
+                    <declare name="ELIGE" type="String" array="False" size=""/>
+                    <input variable="ELIGE"/>
+                    <input variable="INGREDIENTES"/>
+                    <assign variable="PIZZA" expression="&quot; NO VEGETARIANA: CON MOZZARELLA,TOMATE&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
