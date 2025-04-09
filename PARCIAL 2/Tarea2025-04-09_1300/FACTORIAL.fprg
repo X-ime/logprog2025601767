@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FACTORIAL"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 09:25:20 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDg7MDg6NDY6MzUgcC4gbS47MzUxMQ=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDg7MDk6MjU6MjAgcC4gbS47MTszNjEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <declare name="FACTORIAL" type="Integer" array="False" size=""/>
+            <assign variable="N" expression="1"/>
+            <assign variable="I" expression="1"/>
+            <output expression="&quot;INGRESE UN VALOR&quot;" newline="True"/>
+            <input variable="FACTORIAL"/>
+            <assign variable="FACTORIAL" expression="FACTORIAL*1"/>
+            <while expression="I==1">
+                <assign variable="N" expression="N*1"/>
+                <assign variable="I" expression="I+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
