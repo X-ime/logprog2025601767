@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SECUENCIA"/>
+        <attribute name="authors" value="FAMILIA CAMPOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 09:45:16 p. m."/>
+        <attribute name="created" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDg7MDk6MzM6MTkgcC4gbS47MzUxMA=="/>
+        <attribute name="edited" value="RkFNSUxJQSBDQU1QT1M7REVTS1RPUC1FOVUySFMzOzIwMjUtMDQtMDg7MDk6NDU6MTYgcC4gbS47MTszNjE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <declare name="D" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="1"/>
+            <assign variable="B" expression="2"/>
+            <input variable="A"/>
+            <for variable="C" start="3" end="64" direction="inc" step="1">
+                <assign variable="D" expression="A+B"/>
+                <assign variable="A" expression="B"/>
+                <assign variable="B" expression="D"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
